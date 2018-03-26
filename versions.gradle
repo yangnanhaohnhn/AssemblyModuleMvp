@@ -1,0 +1,68 @@
+ext {
+    //版本version
+    versions = [
+            android_gradle_plugin     : "3.0.1",
+            kotlin_version            : '1.1.51',
+            support                   : "26.1.0",
+            constraint_layout_version : "1.0.2",
+            test_runner_version       : "1.0.1",
+            test_espresso_core_version: "3.0.1",
+            multidex                  : "1.0.2",
+
+            gson                      : "2.8.1",
+            retrofit                  : "2.3.0",
+            okhttp                    : "3.9.0",
+            rxjava                    : "1.3.2",
+            rxandroid                 : "1.2.1",
+
+            xutils                    : "3.3.22",
+            dexter                    : "2.2.1",
+            glide                     : "3.6.1",
+
+            //Arouter
+            arouter_compiler          : "1.1.4",
+            arouter_api               : "1.3.1",
+
+            log                       : "1.15"
+    ]
+    build_versions = [
+            min_sdk      : 16,
+            target_sdk   : 26,
+            compile_sdk  : 26,
+            vsersion_code: 1,
+            vsersion_name: "1.0"
+    ]
+    deps = [
+            android_gradle_plugin: "com.android.tools.build:gradle:${versions.android_gradle_plugin}",
+            kotlin_gradle_plugin : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin_version}",
+            kotlin_stdlib_jre7   : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${versions.kotlin_version}",
+            appcompat_v7         : "com.android.support:appcompat-v7:${versions.support}",
+            constraint_layout    : "com.android.support.constraint:constraint-layout:${versions.constraint_layout_version}",
+            test_runner          : "com.android.support.test:runner:${versions.test_runner_version}",
+            test_espresso_core   : "com.android.support.test.espresso:espresso-core:${versions.test_espresso_core_version}",
+            multidex             : "com.android.support:multidex:${versions.multidex}",
+            appcompat_v4         : "com.android.support:support-v4:${versions.support}",
+
+            design               : "com.android.support:design:${versions.support}",
+            cardview             : "com.android.support:cardview-v7:${versions.support}",
+
+            gson                 : "com.google.code.gson:gson:${versions.gson}",
+            retrofit             : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+            converter_gson       : "com.squareup.retrofit2:converter-gson:${versions.retrofit}",
+            converter_jackson    : "com.squareup.retrofit2:converter-jackson:${versions.retrofit}",
+            adapter_rxjava       : "com.squareup.retrofit2:adapter-rxjava:${versions.retrofit}",
+            okhttp               : "com.squareup.okhttp3:okhttp:${versions.okhttp}",
+            logging_interceptor  : "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}",
+            rxjava               : "io.reactivex:rxjava:${versions.rxjava}",
+            rxandroid            : "io.reactivex:rxandroid:${versions.rxandroid}",
+
+            dexter               : "com.karumi:dexter:${versions.dexter}",
+            glide                : "com.github.bumptech.glide:glide:${versions.glide}",
+            xutils               : "org.xutils:xutils:${versions.xutils}",
+
+            arouter_api          : "com.alibaba:arouter-api:${versions.arouter_api}",
+            arouter_compiler     : "com.alibaba:arouter-compiler:${versions.arouter_compiler}",
+
+            log                  : "com.orhanobut:logger:${versions.log}"
+    ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HintTextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#e6e6e6</item>
+    </style>
+
+    <style name="ErrorTextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#dd2c00</item>
+    </style>
+</resources>

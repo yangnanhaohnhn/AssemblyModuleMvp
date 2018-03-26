@@ -103,6 +103,20 @@ abstract class BaseActivity<P : BasePresenter> : AppCompatActivity(), View.OnCli
 
     override fun onClick(v: View) {}
 
+    fun setText(view: View, title: String) {
+        if (view is TextView) {
+            view.text = title
+        } else if (view is Button) {
+            view.text = title
+        } else if (view is EditText) {
+            view.setText(title)
+        }
+    }
+
+    fun setText(view: View, title: Int) {
+        setText(view,getString(title))
+    }
+
     fun handleMsg(msg: Message) {}
 
     fun onBackPress() {

@@ -9,4 +9,5 @@ import com.jdan.yn.common.view.BaseView
 interface ILoginView : BaseView {
     val userName: String
     val passWord: String
+    fun clean()
 }

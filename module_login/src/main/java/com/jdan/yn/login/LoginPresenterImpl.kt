@@ -28,7 +28,7 @@ internal class LoginPresenterImpl(view: ILoginView) : BasePresenterImpl<ILoginVi
             return
         }
         mvpView!!.showLoading()
-        mvpModel.login(userName, passWord, object : ApiCallback<BaseBean> {
+        mvpModel!!.login(userName, passWord, object : ApiCallback<BaseBean> {
             override fun onSuccess(model: BaseBean) {
                 Logger.e(model.status.toString() + "!")
             }
@@ -41,5 +41,12 @@ internal class LoginPresenterImpl(view: ILoginView) : BasePresenterImpl<ILoginVi
                 mvpView!!.hideLoading()
             }
         })
+    }
+
+    /**
+     * 清理数据
+     */
+    override fun cleanData(){
+        mvpView!!.clean()
     }
 }

@@ -8,4 +8,5 @@ import com.jdan.yn.common.presenter.BasePresenter
 
 interface ILoginPresenter : BasePresenter {
     fun login()
+    fun cleanData()
 }

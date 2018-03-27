@@ -1,9 +1,7 @@
 package com.jdan.yn.common.ui.activity
 
+
 import android.app.Activity
-import android.app.Dialog
-import android.content.Intent
-import android.content.IntentFilter
 import android.content.res.Configuration
 import android.content.res.Resources
 import android.os.Bundle
@@ -13,15 +11,10 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageView
 import android.widget.TextView
-
-
 import com.jdan.yn.common.presenter.BasePresenter
 import com.jdan.yn.common.utils.ToastUtils
 import com.orhanobut.logger.Logger
-
-import java.util.HashMap
 
 
 /**
